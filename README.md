@@ -1,2 +1,2 @@
-# ReligionDataRequestsDB
+# DataRequestsDB
 A database for requesting data
