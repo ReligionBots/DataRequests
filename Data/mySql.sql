@@ -32,5 +32,6 @@ CREATE TABLE Narrations(
     Reference VARCHAR(256) NOT NULL,
     NarrationType VARCHAR(256) NOT NULL,
     Page INTEGER(11) NOT NULL,
-    
+    Book INTEGER(11) NOT NULL,
+    Hadith INTEGER(11) NOT NULL,
 );

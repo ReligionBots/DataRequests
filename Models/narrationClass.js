@@ -1,10 +1,10 @@
 const db = require("../database.js");
 
 
-class Narrations{
+class Narration{
     constructor() {
         if (this.instance) return this.instance;
-        Narrations.instance = this;
+        Narration.instance = this;
         this.tableName = "Narrations";
     }
 
@@ -49,4 +49,4 @@ class Narrations{
 }
 
 
-module.exports = new Narrations();
+module.exports = new Narration();

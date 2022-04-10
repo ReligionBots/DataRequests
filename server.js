@@ -1,18 +1,20 @@
 const express = require('express');
 const app = express();
 const port = process.env.DATABASE_PORT || 3003;
-const QuranRouter = require("./Controllers/qRouter.js");
-const PrefixesRouter = require("./Controllers/preRouter.js")
-const TranslationsRouter = require("./Controllers/tRouter.js");
-const NarrationsRouter = require("./Controllers/narrationsRouter.js");
+const quranRouter = require("./Controllers/qRouter.js");
+const prefixesRouter = require("./Controllers/preRouter.js")
+const translationsRouter = require("./Controllers/tRouter.js");
+const narrationsRouter = require("./Controllers/narrationRouter.js");
+const mergesRouter = require("./Controllers/mergeRouter.js");
 
 app.use(express.json());
 
 
-app.use("/quran", QuranRouter);
-app.use("/translation", TranslationsRouter);
-app.use("/pre", PrefixesRouter);
-app.use("/narration", NarrationsRouter);
+app.use("/quran", quranRouter);
+app.use("/translation", translationsRouter);
+app.use("/pre", prefixesRouter);
+app.use("/narration", narrationsRouter);
+app.use("/merge", mergesRouter);
 
 
 app.listen(port, () => {
