@@ -1,4 +1,5 @@
 const express = require('express');
+const timeOut = require('connect-timeout');
 const app = express();
 const port = process.env.DATABASE_PORT || 3003;
 const quranRouter = require("./Controllers/qRouter.js");
@@ -10,6 +11,7 @@ const mergesRouter = require("./Controllers/mergeRouter.js");
 app.use(express.json());
 
 
+app.use(timeOut('10s'))
 app.use("/quran", quranRouter);
 app.use("/translation", translationsRouter);
 app.use("/pre", prefixesRouter);

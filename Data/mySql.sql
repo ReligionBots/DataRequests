@@ -26,6 +26,7 @@ CREATE TABLE Prefixes(
     prefix VARCHAR(64) NOT NULL
 );
 
+INSERT INTO Prefixes(guild, prefix) VALUES('0','~');
 
 CREATE TABLE Narrations(
     NarrationId VARCHAR(256) NOT NULL PRIMARY KEY, 
@@ -33,5 +34,5 @@ CREATE TABLE Narrations(
     NarrationType VARCHAR(256) NOT NULL,
     Page INTEGER(11) NOT NULL,
     Book INTEGER(11) NOT NULL,
-    Hadith INTEGER(11) NOT NULL,
+    Hadith INTEGER(11) NOT NULL
 );
