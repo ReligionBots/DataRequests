@@ -2,7 +2,7 @@ const TModel = require('../Models/tClass.js');
 const express = require('express');
 const router = express.Router();
 
-data = { "TranslationId": "324dsfaas3","TranslationName":"english translation by unknown", "TranslationText":"k lsdjfksjd3 kdjf", "TranslationLanguage":"english", "AyahId": "23k4jkekfjasd", "Ayah": 34, "Surah": 342, "Page": 23, "Juz": 24 }
+// data = { "TranslationId": "324dsfaas3","TranslationName":"english translation by unknown", "TranslationText":"k lsdjfksjd3 kdjf", "TranslationLanguage":"english", "AyahId": "23k4jkekfjasd", "Ayah": 34, "Surah": 342, "Page": 23, "Juz": 24 }
 
 router.get('/get', async (req, res) => { 
     try{
