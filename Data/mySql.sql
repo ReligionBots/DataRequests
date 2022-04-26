@@ -36,3 +36,10 @@ CREATE TABLE Narrations(
     Book INTEGER(11) NOT NULL,
     Hadith INTEGER(11) NOT NULL
 );
+
+
+
+SELECT `Prefixes`.`id`,
+    `Prefixes`.`guild`,
+    `Prefixes`.`prefix`
+FROM `sys`.`Prefixes`;
