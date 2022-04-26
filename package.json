@@ -9,7 +9,7 @@
     "shuffle-array": "^1.0.1"
   },
   "scripts": {
-    "nodeStart": "node server.js",
+    "start": "node server.js",
     "nodemonStart": "nodemon server.js"
   },
   "name": "nodejs-db",
